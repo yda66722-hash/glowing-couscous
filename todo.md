@@ -70,5 +70,13 @@
 - [x] 检查 EAS 失败涉及的原生 Kotlin、Manifest、Gradle 与 Expo 配置。
 - [x] 修复导致 Gradle 构建失败的无障碍服务/前台服务配置（补齐悬浮球切换方法，并保留 Android 14 specialUse 声明）。
 - [x] 执行类型检查、单元测试、Expo 预构建与可行的 Android 构建验证（原生预构建通过；本地环境缺 Android SDK，真机/EAS 仍需验证）。
-- [ ] 将修复后的完整应用源码同步到 yda66722-hash/glowing-couscous。
+- [x] 将修复后的完整应用源码同步到 yda66722-hash/glowing-couscous。
 - [ ] 保存最终项目版本并提供 GitHub 提交信息与构建说明。
+
+## 修复：递增 Android 发布版本号
+
+- [x] 将 Expo 应用版本从 1.0.0 递增到 1.0.1。
+- [x] 将 Android versionCode 递增，避免继续使用旧构建缓存。
+- [x] 验证 Expo 配置解析出的版本和 Android versionCode。
+- [x] 运行类型检查与单元测试。
+- [ ] 同步版本更新到 GitHub 并保存新项目版本。
