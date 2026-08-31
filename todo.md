@@ -79,4 +79,13 @@
 - [x] 将 Android versionCode 递增，避免继续使用旧构建缓存。
 - [x] 验证 Expo 配置解析出的版本和 Android versionCode。
 - [x] 运行类型检查与单元测试。
-- [ ] 同步版本更新到 GitHub 并保存新项目版本。
+- [x] 同步版本更新到 GitHub 并保存新项目版本（GitHub 提交 53c6668 已推送 main）。
+
+## 新增需求：一键本地 APK 构建脚本
+
+- [x] 创建跨平台 Python 构建脚本，自动检查 Node、pnpm、Java 和 Android SDK。
+- [x] 自动安装依赖、执行 Expo Android 预构建并调用 Gradle 构建 debug APK。
+- [x] 将 APK 复制到 artifacts 目录并输出绝对路径。
+- [x] 对缺少环境、构建失败和 APK 未生成提供清晰错误提示。
+- [x] 验证 Python 语法、帮助信息和项目集成。
+- [ ] 同步脚本并保存项目版本。
